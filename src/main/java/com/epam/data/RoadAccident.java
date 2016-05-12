@@ -22,6 +22,10 @@ public class RoadAccident {
     private String weatherConditions;
     private String roadSurfaceConditions;
 
+    private String forceContact;
+    private TimeOfDay timeOfDay;
+
+
     RoadAccident(RoadAccidentBuilder builder){
         this.accidentId = builder.accidentId;
         this.longitude = builder.longitude;
@@ -145,5 +149,21 @@ public class RoadAccident {
 
     public void setRoadSurfaceConditions(String roadSurfaceConditions) {
         this.roadSurfaceConditions = roadSurfaceConditions;
+    }
+
+    public String getForceContact() {
+        return forceContact;
+    }
+
+    public void setForceContact(String forceContact) {
+        this.forceContact = forceContact;
+    }
+
+    public TimeOfDay getTimeOfDay() {
+        return timeOfDay;
+    }
+
+    public void setTimeOfDay(TimeOfDay timeOfDay) {
+        this.timeOfDay = timeOfDay;
     }
 }
