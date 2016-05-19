@@ -42,6 +42,18 @@ public class RoadAccident {
         this.roadSurfaceConditions = builder.roadSurfaceConditions;
     }
 
+    public String toString() {
+        return accidentId+","
+                + policeForce+","
+                + accidentSeverity+","
+                + date+","+time+","
+                + districtAuthority+","
+                + lightConditions+","
+                + weatherConditions+","
+                + roadSurfaceConditions+","
+                + forceContact+","
+                + timeOfDay;
+    }
 
     public String getAccidentId() {
         return accidentId;
